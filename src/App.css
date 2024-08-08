@@ -1,38 +1,92 @@
-.App {
+:root {
+  background-color: #000000;
+  color: rgb(178, 216, 208);
+  font-size: calc(6px + 2vmin);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filled-box,
+.empty-box {
   display: flex;
-  flex-direction: column;
+  justify-self: center;
   align-items: center;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+}
+
+.empty-box {
+  background-color: rgb(112, 108, 108);
+}
+.filled-box {
+  background-color: lightblue;
+}
+.Box-container {
+  padding: 30px;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(auto-fit, minmax(9px, 1fr));
+  /* grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); */
+  /* grid-template-columns: repeat(auto-fit 1fr); */
+  /* grid-template-rows: repeat(auto-fill, 1fr); */
+}
+
+.details{
+  padding: 20px;
+  display: flex;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(178, 216, 208);
+  align-items: center;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input {
+  text-align: center;
+  border: 2px solid transparent;
+  width: 15em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+input:hover,
+input:focus {
+  border: 2px solid #6ad2ec;
+  box-shadow: 0px 0px 0px 7px rgba(151, 154, 160, 0.342);
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin: 15px;
+}
+
+.navbar  p{
+  font-size: small;
+  padding: none;
+  margin: none;
+}
+
+.ledged{
+  display: inline;
 }
