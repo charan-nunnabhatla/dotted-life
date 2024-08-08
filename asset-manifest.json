@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dotted-life/static/css/main.036d6464.css",
-    "main.js": "/dotted-life/static/js/main.5966780f.js",
+    "main.js": "/dotted-life/static/js/main.ca03dafd.js",
     "static/js/453.c1542273.chunk.js": "/dotted-life/static/js/453.c1542273.chunk.js",
     "index.html": "/dotted-life/index.html",
     "main.036d6464.css.map": "/dotted-life/static/css/main.036d6464.css.map",
-    "main.5966780f.js.map": "/dotted-life/static/js/main.5966780f.js.map",
+    "main.ca03dafd.js.map": "/dotted-life/static/js/main.ca03dafd.js.map",
     "453.c1542273.chunk.js.map": "/dotted-life/static/js/453.c1542273.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.036d6464.css",
-    "static/js/main.5966780f.js"
+    "static/js/main.ca03dafd.js"
   ]
 }
