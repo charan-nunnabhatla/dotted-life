@@ -2,7 +2,6 @@
   background-color: #000000;
   color: rgb(178, 216, 208);
   font-size: calc(6px + 2vmin);
-  text-align: center;
 }
 
 .filled-box,
@@ -31,12 +30,12 @@
   /* grid-template-rows: repeat(auto-fill, 1fr); */
 }
 
-.details{
+form {
   padding: 20px;
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   margin: 20px;
 }
 
@@ -51,18 +50,21 @@ input[type="number"] {
 }
 
 input {
-  text-align: center;
-  border: 2px solid transparent;
+  border: none;
   width: 15em;
   height: 2.5em;
   padding-left: 0.8em;
-  outline: none;
   overflow: hidden;
   background-color: #F3F3F3;
   border-radius: 10px;
   transition: all 0.5s;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #515151;
+  background-color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
 }
 
 input:hover,
@@ -79,14 +81,20 @@ input:focus {
   border: 2px solid white;
   border-radius: 12px;
   margin: 15px;
+  text-align: center;
 }
 
 .navbar  p{
   font-size: small;
   padding: none;
   margin: none;
+  text-align: center;
 }
 
 .ledged{
   display: inline;
+}
+
+.extra-details{
+  padding: 30px;
 }

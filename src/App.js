@@ -63,42 +63,40 @@ const App = () => {
         <p>Know how much life you spend till now in dots</p>
         <p>Each dot represents a week or 7 days</p>
       </div>
-      <div className="details">
+
+      <form>
+        <label>Year Of Birth:</label>
         <input
           type="number"
           className="year-of-birth"
           onChange={(e) => setYearOfBirth(e.target.value)}
-          placeholder="Enter Year Of Birth eg: 2001"
+          placeholder="eg: 2001"
         />
+        <label>How Many Year You Think You Live:</label>
         <input
           type="number"
           className="expected-age"
           onChange={(e) => setExpectedAge(e.target.value)}
-          placeholder="Enter How Many Years You Live eg: 80"
+          placeholder="eg: 80"
         />
         {/* <button onClick={handleSum}>Next</button> */}
-      </div>
+      </form>
+
       {onNext ? (
-        <div>
-          Age: {currentYear - parseInt(yearOfBirth, 10)}
+        <div className="extra-details">
+          Age: {currentYear - parseInt(yearOfBirth, 10)} / {expectedAge}
           <br />
           <br />
           You have completed {lifePercentage.toFixed(2)}% of your life till{" "}
           {expectedYear}
         </div>
-      ) : (
-        <p></p>
-      )}
+      ) : null}
       {onNext ? (
         <div className="Box-container">
           {filledBoxes}
           {emptyBoxes}
         </div>
-      ) : (
-        <div>
-          Enter Your Date of Birth and How Many Years You Think You Live
-        </div>
-      )}
+      ) : null}
     </div>
   );
 };
