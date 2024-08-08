@@ -74,7 +74,7 @@ const App = () => {
           type="number"
           className="expected-age"
           onChange={(e) => setExpectedAge(e.target.value)}
-          placeholder="Enter How Years You Live eg: 80"
+          placeholder="Enter How Many Years You Live eg: 80"
         />
         {/* <button onClick={handleSum}>Next</button> */}
       </div>
