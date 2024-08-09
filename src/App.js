@@ -72,7 +72,7 @@ const App = () => {
           onChange={(e) => setYearOfBirth(e.target.value)}
           placeholder="eg: 2001"
         />
-        <label>How Many Year You Think You Live:</label>
+        <label>How Many Years You Think You Live:</label>
         <input
           type="number"
           className="expected-age"
