@@ -1,10 +1,7 @@
 import MiniTile from "./mini-tile";
-import { animalsList, colors, tabsAtom } from "../../atoms";
-import { useAtomValue } from "jotai";
+import { animalsList, colors } from "../../atoms";
 
 export default function Selection() {
-  const tabID = useAtomValue(tabsAtom);
-
   return (
     <div className="flex p-2 mx-auto overflow-x-auto rounded md:justify-center scroll-bar">
       <div className="flex flex-row items-center px-2 py-1 mx-auto rounded w-fit ">
