@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "git push -u origin master && tsc -b && vite build",
+    "build": "tsc -b && vite build && git push -u origin master",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
