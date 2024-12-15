@@ -1,4 +1,3 @@
-import { useAtomValue } from "jotai";
 import { atomWithStorage } from "jotai/utils";
 
 export const animalsList: Array<string> = ["human", "dog", "cat", "bird"];
