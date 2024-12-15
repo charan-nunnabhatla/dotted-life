@@ -2,21 +2,14 @@ import { tabsAtom, ageAtom } from "../../atoms";
 import { useAtom, useAtomValue } from "jotai";
 
 export default function Inputs() {
-  const tabId = useAtomValue(tabsAtom);
   const [age, setAge] = useAtom(ageAtom);
-
-  const handleClick = () => {
-    
-  };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setAge(event.target.value as unknown as number);
   };
 
   return (
-    <div className="flex p-2 border h-fit max-w-[80%] mx-auto my-3">
-      {tabId + 1}
-      {age}
+    <div className="flex p-2 h-fit max-w-[80%] mx-auto my-3">
       <div className="mx-auto ">
         <label htmlFor="age">Age: </label>
         <input
@@ -25,13 +18,9 @@ export default function Inputs() {
           type="number"
           value={age}
           min={1}
+          max={999}
           onChange={handleChange}
         />
-        <button
-          onClick={() => handleClick}
-          className="px-3 py-1 mx-4 border rounded">
-          Next
-        </button>
       </div>
     </div>
   );

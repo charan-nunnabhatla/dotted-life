@@ -18,7 +18,7 @@ export default function MiniTile({ title, color, index }: MiniTileType) {
     <div className="flex space-x-2">
       <button
         onClick={() => handleClick(index)}
-        className="px-5 mx-2 font-bold text-center text-white rounded text-md"
+        className="px-5 mx-2 font-bold text-center text-white capitalize rounded text-md"
         style={{
           // color: activeTab !== index ? col : "white",
           backgroundColor:

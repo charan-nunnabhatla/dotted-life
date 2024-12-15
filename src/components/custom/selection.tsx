@@ -1,18 +1,22 @@
 import MiniTile from "./mini-tile";
+import { animalsList, colors, tabsAtom } from "../../atoms";
+import { useAtomValue } from "jotai";
 
 export default function Selection() {
-  const animals: Array<[string, string]> = [
-    ["Human", "rgb(143,191,160)"],
-    ["Dog", "rgb(194,183,155)"],
-    ["Cat", "rgb(161,181,201)"],
-    ["Bird", "rgb(183,159,209)"],
-  ];
+  const tabID = useAtomValue(tabsAtom);
 
   return (
     <div className="flex p-2 mx-auto overflow-x-auto rounded md:justify-center scroll-bar">
       <div className="flex flex-row items-center px-2 py-1 mx-auto rounded w-fit ">
-        {animals.map(([val, col], index) => {
-          return <MiniTile key={index} title={val} color={col} index={index} />;
+        {Array.from({ length: animalsList.length }).map((_, index) => {
+          return (
+            <MiniTile
+              key={index}
+              title={animalsList[index]}
+              color={colors[index]}
+              index={index}
+            />
+          );
         })}
       </div>
     </div>
