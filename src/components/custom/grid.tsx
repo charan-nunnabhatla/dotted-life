@@ -40,7 +40,7 @@ export default function Grid() {
   };
 
   return (
-    <div className="block w-full py-3 h-fit ">
+    <div className="block w-full py-3 md:w-[80%] lg:w-[60%] md:mx-auto h-fit ">
       <div className="text-sm text-center text-gray-400">
         According to the average lifespan of {animalsList[tabID]}:{" "}
         <input

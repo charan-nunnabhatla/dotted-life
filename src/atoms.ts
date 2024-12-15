@@ -16,5 +16,5 @@ export const averageAges: Record<string, number> = {
 };
 
 export const tabsAtom = atomWithStorage("tabID", 0);
-export const ageAtom = atomWithStorage("age", 1);
+export const ageAtom = atomWithStorage("age", 0);
 export const currentAnimalAvgAge = atomWithStorage("currentAnimalAvgAge", 0);
