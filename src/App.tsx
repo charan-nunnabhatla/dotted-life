@@ -7,7 +7,7 @@ import Grid from "./components/custom/grid";
 
 function App() {
   return (
-    <div className="w-screen h-full p-5">
+    <div className="w-screen h-full overflow-hidden">
       <Head />
       <Labels />
       <Selection />
