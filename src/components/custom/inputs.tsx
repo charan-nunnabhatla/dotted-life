@@ -1,5 +1,5 @@
-import { tabsAtom, ageAtom } from "../../atoms";
-import { useAtom, useAtomValue } from "jotai";
+import { ageAtom } from "../../atoms";
+import { useAtom } from "jotai";
 
 export default function Inputs() {
   const [age, setAge] = useAtom(ageAtom);
