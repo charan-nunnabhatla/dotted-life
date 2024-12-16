@@ -4,10 +4,10 @@ export default function Head() {
       <h1 className="text-3xl font-black text-center text-transparent text-black bg-clip-text bg-gradient-to-tr from-emerald-400 to-blue-600 md:text-4xl lg:text-5xl">
         Dotted Life
       </h1>
-      <div className="capitalize text-center font-bold text-xs md:text-sm text-[rgb(238,145,69)]">
+      {/* <div className="capitalize text-center font-bold text-xs md:text-sm text-[rgb(238,145,69)]">
         "Know your life in dots, each dot is a week"
-      </div>
-      <div className="w-[80%] border border-gray-400 m-3 "></div>
+      </div> */}
+      {/* <div className="w-[80%] border border-gray-400 m-3 "></div> */}
     </div>
   );
 }
